@@ -159,7 +159,15 @@ public abstract class AuthorizationEndpointBase {
     }
 
     protected void checkSsl() {
-        if (!session.getContext().getUri().getBaseUri().getScheme().equals("https") && realm.getSslRequired().isRequired(clientConnection)) {
+        if (!session.
+            getContext().
+            getUri().
+            getBaseUri().
+            getScheme().
+            equals("https") && 
+            realm.
+            getSslRequired().
+            isRequired(clientConnection)) {
             event.error(Errors.SSL_REQUIRED);
             throw new ErrorPageException(session, Response.Status.BAD_REQUEST, Messages.HTTPS_REQUIRED);
         }
