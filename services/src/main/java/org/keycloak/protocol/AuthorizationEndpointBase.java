@@ -159,12 +159,12 @@ public abstract class AuthorizationEndpointBase {
     }
 
     protected void checkSsl() {
-        logger.debugf("%s", session != null)
-        logger.debugf("%s", session.getContext() != null)
-        logger.debugf("%s", session.getContext().getUri() != null)
-        logger.debugf("%s", session.getContext().getUri().getBaseUri() != null)
-        logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme() != null)
-        logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme().equals("https") != null)
+        logger.debugf("%s", session != null);
+        logger.debugf("%s", session.getContext() != null);
+        logger.debugf("%s", session.getContext().getUri() != null);
+        logger.debugf("%s", session.getContext().getUri().getBaseUri() != null);
+        logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme() != null);
+        logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme().equals("https") != null);
         if (!session.
             getContext().
             getUri().
