@@ -159,6 +159,7 @@ public abstract class AuthorizationEndpointBase {
     }
 
     protected void checkSsl() {
+        logger.debugf("niraizik");
         logger.debugf("%s", session != null);
         logger.debugf("%s", session.getContext() != null);
         logger.debugf("%s", session.getContext().getUri() != null);
