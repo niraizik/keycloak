@@ -163,6 +163,7 @@ public abstract class AuthorizationEndpointBase {
         logger.debugf("%s", session != null);
         logger.debugf("%s", session.getContext() != null);
         logger.debugf("%s", session.getContext().getUri() != null);
+        logger.debugf("%s", session.getContext().getUri());
         logger.debugf("%s", session.getContext().getUri().getBaseUri() != null);
         logger.debugf("%s", session.getContext().getUri().getBaseUri());
         logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme() != null);
