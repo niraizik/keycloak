@@ -164,6 +164,7 @@ public abstract class AuthorizationEndpointBase {
         logger.debugf("%s", session.getContext() != null);
         logger.debugf("%s", session.getContext().getUri() != null);
         logger.debugf("%s", session.getContext().getUri().getBaseUri() != null);
+        logger.debugf("%s", session.getContext().getUri().getBaseUri());
         logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme() != null);
         logger.debugf("%s", session.getContext().getUri().getBaseUri().getScheme().equals("https") == true);
         if (!session.
